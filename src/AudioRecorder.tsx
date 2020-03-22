@@ -1,6 +1,7 @@
 import * as React from 'react';
 import WAVEInterface from './waveInterface';
 import downloadBlob from './downloadBlob';
+import getBase64 from './getBase64Blob';
 
 interface AudioRecorderChangeEvent {
   duration: number,
@@ -20,6 +21,7 @@ interface AudioRecorderProps {
   onPause?: () => void,
   onPlay?: () => void,
   onRecordStart?: () => void,
+  onGetBase64?: () => string,
 
   playLabel?: string,
   playingLabel?: string,
@@ -136,6 +138,10 @@ export default class AudioRecorder extends React.Component<AudioRecorderProps, A
   };
 
   onDownloadClick = () => downloadBlob(this.state.audioData, this.props.filename);
+
+  onGetBase64 = () => {
+    return getBase64(this.state.audioData);
+  }
 
   onButtonClick = (event: React.SyntheticEvent<HTMLButtonElement>) => {
     if (this.state.audioData) {

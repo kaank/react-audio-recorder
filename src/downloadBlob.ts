@@ -11,3 +11,4 @@ export default function downloadBlob(blob: Blob, filename: string) {
   link.click();
   return link;
 }
+
