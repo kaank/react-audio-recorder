@@ -8,7 +8,7 @@
   "jsnext:main": "dist/AudioRecorder.js",
   "license": "MIT",
   "author": "Dan Rouse",
-  "forkby": "Kaan KARATAÇ",
+  "forkedby": "Kaan KARATAÇ",
   "homepage": "https://github.com/danrouse/react-audio-recorder",
   "repository": {
     "type": "git",
