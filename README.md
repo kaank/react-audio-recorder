@@ -1,3 +1,8 @@
+# Fork by Kaan KARATAÇ
+
+Added Base64 Output Support..
+
+
 # Audio Recorder
 
 A React Component using the Web Audio API to record, save, and play audio.
