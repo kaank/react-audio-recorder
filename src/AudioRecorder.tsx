@@ -34,7 +34,7 @@ interface AudioRecorderProps {
 interface AudioRecorderState {
   isRecording: boolean,
   isPlaying: boolean,
-  audioData?: Blob
+  audioData?: Blob,
 };
 
 export default class AudioRecorder extends React.Component<AudioRecorderProps, AudioRecorderState> {
